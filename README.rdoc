@@ -1,0 +1,10 @@
+= Ateles
+
+Ateles is a web spider written in JavaScript.  It uses YQL via JSON-P
+to get around the cross-domain issues that immediately crop up when
+contemplating writing a JavaScript web spider...
+
+Ateles is really just a toy -- you wouldn't want to orchestrate a
+long, complex, or big scrape using it.
+
+It is kind of cool for playing with a scrape in real-time though.
