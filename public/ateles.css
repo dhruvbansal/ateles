@@ -1,0 +1,8 @@
+input.url { width: 500px  }
+
+ul.scrape li { width: 500px }
+ul.scrape ul.folder div.basename { width: 500px }
+
+.link_counts { display: none; }
+
+img.spinner { width: 20px ; height: 20px; }

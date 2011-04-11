@@ -1,0 +1,20 @@
+%h1 Ateles
+%h2 A JavaScript-based web crawler
+%form#base_url
+  %input.url{:type => "text", :name => "url", :value => "http://www.infochimps.com"}
+  %input{:type => "submit", :name => "Scrape", :value => "Scrape"}
+%ul.scrape.filetree#scrape
+
+  
+:javascript
+  scraper = null;
+  $(document).ready(function() {
+    $('#base_url').submit(function() {
+    var url = $(this).find('input.url').val();
+    scraper = new Ateles.Scraper(url, '#scrape');
+    scraper.scrape()
+    return false;
+    })
+  })
+
+
